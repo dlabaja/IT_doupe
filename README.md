@@ -1,5 +1,7 @@
 # IT doupě
-Rubrika IT doupě, kterou od roku 2021 přispívám každý měsíc do školního časopisu 
+Rubrika IT doupě, kterou od roku 2021 přispívám každý měsíc do školního časopisu
+
+Začínal jsem u 4 menších článků za měsíc, ale kvůli nedostatku nápadů a času dnes píši 1 dlouhý měsíčně 
 
 # Přehled článků:
 <details>
