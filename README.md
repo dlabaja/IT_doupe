@@ -51,4 +51,8 @@ Začínal jsem u 4 menších článků měsíčně, ale kvůli nedostatku nápad
 	- Jak na… Makra v LibreOffice
 - **01/23** 
 	- Jak na… Media Player (v terminálu)
+- **02/23** 
+	- Jak na… UNO v Pythonu
+- **03/23** 
+	- Jak na… Pohyb kamery v Unity
 </details>
