@@ -55,4 +55,6 @@ Začínal jsem u 4 menších článků měsíčně, ale kvůli nedostatku nápad
 	- Jak na… UNO v Pythonu
 - **03/23** 
 	- Jak na… Pohyb kamery v Unity
+- **04/23** 
+	- Jak funguje Internet – základy Internetu
 </details>
