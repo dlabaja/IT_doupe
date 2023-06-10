@@ -1,12 +1,12 @@
 # IT doupě
 Rubrika IT doupě, kterou od roku 2021 přispívám každý měsíc do školního časopisu
 
-Začínal jsem u 4 menších článků měsíčně, ale kvůli nedostatku nápadů a času dnes píši jen 1 dlouhý
+Začínal jsem u 4 menších článků měsíčně, dnes píši jen 1 dlouhý
 
 # Přehled článků:
 <details>
   <summary>2021/22</summary>
-  
+
 - **10/21**
   - Spustím Windows 11?
   - Systém v systému
@@ -57,4 +57,14 @@ Začínal jsem u 4 menších článků měsíčně, ale kvůli nedostatku nápad
 	- Jak na… Pohyb kamery v Unity
 - **04/23** 
 	- Jak funguje Internet – základy Internetu
+- **05/23** 
+	- Jak funguje Internet – Ethernet
+- **06/23** 
+	- Jak funguje Internet – IP adresy
+</details>
+
+<details>
+  <summary>2023/24</summary>
+
+- coming soon
 </details>
