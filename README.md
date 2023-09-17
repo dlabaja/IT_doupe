@@ -66,5 +66,6 @@ Začínal jsem u 4 menších článků měsíčně, dnes píši jen 1 dlouhý
 <details>
   <summary>2023/24</summary>
 
-- coming soon
+- **09/23**
+  - Jak funguje Internet – Transportní vrstva
 </details>
