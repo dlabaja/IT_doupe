@@ -68,4 +68,6 @@ Začínal jsem u 4 menších článků měsíčně, dnes píši jen 1 dlouhý
 
 - **09/23**
   - Jak funguje Internet – Transportní vrstva
+- **10/23**
+  - Jak funguje Internet – Aplikační vrstva a protokoly
 </details>
