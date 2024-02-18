@@ -70,4 +70,10 @@ Začínal jsem u 4 menších článků měsíčně, dnes píši jen 1 dlouhý
   - Jak funguje Internet – Transportní vrstva
 - **10/23**
   - Jak funguje Internet – Aplikační vrstva a protokoly
+- **11/23**
+  - Jak na… nastavení vlastního switche
+- **12/23**
+  - Jak funguje Internet – VLAN
+- **02/24**
+  - Jak funguje Internet – STP a Etherchannels
 </details>
