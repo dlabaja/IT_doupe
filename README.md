@@ -76,4 +76,6 @@ Začínal jsem u 4 menších článků měsíčně, dnes píši jen 1 dlouhý
   - Jak funguje Internet – VLAN
 - **02/24**
   - Jak funguje Internet – STP a Etherchannels
+- **03/24**
+  - Jak funguje Internet – DHCP a FHRP
 </details>
