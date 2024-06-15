@@ -80,4 +80,14 @@ Začínal jsem u 4 menších článků měsíčně, dnes píši jen 1 dlouhý
   - Jak funguje Internet – DHCP a FHRP
 - **04/24**
     - Jak funguje Internet – LAN security
+- **05/24**
+    - Jak funguje Internet – WLAN
+- **06/24**
+    - Jak funguje Internet – Routing
+</details>
+
+<details>
+  <summary>2024/25</summary>
+
+Comming soon
 </details>
