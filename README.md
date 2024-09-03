@@ -89,5 +89,6 @@ Začínal jsem u 4 menších článků měsíčně, dnes píši jen 1 dlouhý
 <details>
   <summary>2024/25</summary>
 
-Comming soon
+- **09/24**
+  - Jak se tvoří Web – HTML
 </details>
