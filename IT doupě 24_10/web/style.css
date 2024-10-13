@@ -1,0 +1,73 @@
+body {
+    font-family: Biennale, serif;
+    background: aliceblue;
+    color: navy;
+    max-width: 1000px;
+    margin: auto;
+    padding: 20px;
+}
+
+#top {
+    text-align: center;
+}
+
+h1, h2, h3, h4, ol {
+    margin: 8px 0;
+}
+
+h1 {
+    font-size: 40px;
+}
+
+.buttonBlue {
+    background: blue;
+    color: aliceblue;
+}
+
+.buttonBlue:hover {
+    background: navy;
+}
+
+.button {
+    padding: 10px;
+    width: 300px;
+    border-radius: 10px;
+    border: 1px solid black;
+    cursor: pointer;
+    font-weight: 600;
+    font-size: 15px;
+}
+
+.article {
+    max-width: 800px;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    
+    .textInContainer {
+        flex-grow: 1;
+    }
+    
+    .imageContainer {
+        display: flex;
+        flex-direction: column;
+        row-gap: 20px;
+        
+        #imageInfo {
+            margin: 0 auto;
+        }
+    }
+}
+
+@media (max-width: 700px) {
+    .container {
+        flex-direction: column;
+
+        .imageContainer {
+            max-width: 300px;
+            margin: auto;
+        }
+    }
+}
