@@ -1,8 +1,6 @@
 # IT doupě
 Rubrika IT doupě, kterou od roku 2021 přispívám každý měsíc do školního časopisu
 
-Začínal jsem u 4 menších článků měsíčně, dnes píši jen 1 dlouhý
-
 # Přehled článků:
 <details>
   <summary>2021/22</summary>
@@ -91,4 +89,22 @@ Začínal jsem u 4 menších článků měsíčně, dnes píši jen 1 dlouhý
 
 - **09/24**
   - Jak se tvoří Web – HTML
+- **10/24**
+  - Jak se tvoří Web – CSS
+- **11/24**
+  - Jak se tvoří Web – JavaScript
+- **12/24**
+  - Jak se tvoří Web – Balíčky, bundling a publikace
+- **01/25**
+  - Jak se tvoří Web – TypeScript, Sass a CSS moduly
+- **02/25**
+  - Jak se tvoří Web – React a state management
+- **03/25**
+  - Jak se tvoří Web – Storybook
+- **04/25**
+  - Jak se tvoří Web – Next.js
+- **05/25**
+  - Jak se tvoří Web – Lokalizace a testy
+- **06/25**
+  - Speciál, poslední číslo
 </details>
