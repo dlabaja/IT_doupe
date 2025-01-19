@@ -1,20 +1,27 @@
 const express = require("express");
-const path = require("path");
+const path = require("node:path");
 
 const app = express();
 const port = 8080;
 const dist = (p) => path.resolve(__dirname, "..", "dist", p)
-
-app.get('/', (req, res) => {
-    res.sendFile(dist("index.html"));
-});
-
-app.get('/public/bundle.js', (req, res) => {
-    res.sendFile(dist("public/bundle.js"));
-});
+app.use(express.static(dist("../dist")));
 
 app.get('*', (req, res) => {
-    res.sendFile(dist("error.html"));
+    const html = `
+    <!DOCTYPE html>
+    <html lang="en">
+      <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Epický web</title>
+      </head>
+      <body>
+        <div id="root"></div>
+        <script src="/bundle.js"></script>
+      </body>
+    </html>
+  `;
+    res.send(html);
 });
 
 app.listen(port, () => {

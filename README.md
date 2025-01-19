@@ -96,9 +96,9 @@ Rubrika IT doupě, kterou od roku 2021 přispívám každý měsíc do školníh
 - **12/24**
   - Jak se tvoří Web – Balíčky, bundling a publikace
 - **01/25**
-  - Jak se tvoří Web – TypeScript, Sass a CSS moduly
+  - Jak se tvoří Web – React
 - **02/25**
-  - Jak se tvoří Web – React a state management
+  - Jak se tvoří Web – TypeScript, Sass a CSS moduly
 - **03/25**
   - Jak se tvoří Web – Storybook
 - **04/25**
@@ -106,5 +106,5 @@ Rubrika IT doupě, kterou od roku 2021 přispívám každý měsíc do školníh
 - **05/25**
   - Jak se tvoří Web – Lokalizace a testy
 - **06/25**
-  - Speciál, poslední číslo
+  - Odcházení
 </details>

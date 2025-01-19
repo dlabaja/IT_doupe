@@ -1,32 +1,34 @@
 const path = require("path");
-const HtmlWebpackPlugin = require("html-webpack-plugin");
-const {readdirSync} = require("node:fs");
-
-const htmlDir = path.resolve(__dirname, "src/html")
-const htmlFiles = readdirSync(htmlDir);
-const multipleHtmlPlugins = htmlFiles.map(name => {
-    return new HtmlWebpackPlugin({
-        template: path.join(htmlDir, name),
-        filename: name,
-    });
-});
 
 module.exports = {
-    entry: "./src/scripts/index.js",
+    entry: "./src/scripts/index.jsx",
     output: {
         path: path.resolve(__dirname, "dist"),
-        filename: "public/bundle.js",
+        filename: "bundle.js",
     },
-    mode: "production",
+    mode: "development",
     module: {
         rules: [
             {
                 test: /\.css$/i,
                 use: ["style-loader", "css-loader"],
             },
+            {
+                test: /\.jsx?$/,
+                exclude: /node_modules/,
+                use: {
+                    loader: "babel-loader",
+                    options: {
+                        "presets": [
+                            "@babel/preset-env",
+                            ["@babel/preset-react", {"runtime": "automatic"}]
+                        ]
+                    },
+                },
+            },
         ],
     },
-    plugins: [
-        ...multipleHtmlPlugins
-    ],
+    resolve: {
+        extensions: ['.js', '.jsx'], // Webpack bude automaticky hledat .js a .jsx soubory
+    },
 };
