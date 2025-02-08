@@ -1,7 +1,12 @@
 import {getRandomNumber} from "../../scripts/utils";
 import {useRef, useState} from "react";
 
-export const ChangingTitle = ({changeTitle}) => {
+interface IChangingTitleProps {
+    changeTitle: (fn: () => void) => void
+}
+
+export const ChangingTitle = (props: IChangingTitleProps) => {
+    const {changeTitle} = props;
     const canScramble = useRef(true);
     const titles = ["HTML", "CSS", "JavaScript", "Elektronka", "SPŠE", "Olomouc", "Informatika"];
     const generateTitle = () => titles[getRandomNumber(titles.length)];
@@ -23,12 +28,12 @@ export const ChangingTitle = ({changeTitle}) => {
         }
 
         const interval = setInterval(() => {
-             setText(chosenText
-                 .split("") // Rozdělí text na jednotlivá písmena
-                 .map((letter, index) =>
-                     index < iteration ? chosenText[index] : letters[getRandomNumber(letters.length)]
-                 )
-                 .join("") // Složí text zpět
+            setText(chosenText
+                .split("") // Rozdělí text na jednotlivá písmena
+                .map((letter, index) =>
+                    index < iteration ? chosenText[index] : letters[getRandomNumber(letters.length)]
+                )
+                .join("") // Složí text zpět
             )
 
             iteration += 1 / 3; // Zrychluje postup
@@ -45,9 +50,12 @@ export const ChangingTitle = ({changeTitle}) => {
         scrambleText();
     })
     
-    return <h1 
+    return (
+        <h1 
             id={"title"} 
             onMouseOver={() => scrambleText()}
         >
             {text}
-        </h1>}
+        </h1>
+    )
+}

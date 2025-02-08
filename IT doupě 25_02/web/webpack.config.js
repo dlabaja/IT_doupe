@@ -10,25 +10,36 @@ module.exports = {
     module: {
         rules: [
             {
-                test: /\.css$/i,
-                use: ["style-loader", "css-loader"],
+                test: /\.module\.scss$/i, // modules
+                use: ["style-loader", {
+                    loader: "css-loader",
+                    options: {
+                        modules: true,
+                    },
+                }, "sass-loader"],
             },
             {
-                test: /\.jsx?$/,
+                test: /\.scss$/i, // non-modules
+                exclude: /\.module\.scss$/i,
+                use: ["style-loader", "css-loader", "sass-loader"], // Sass/Scss -> CSS -> inline CSS
+            },
+            {
+                test: /\.[jt]sx?$/,
                 exclude: /node_modules/,
                 use: {
                     loader: "babel-loader",
                     options: {
-                        "presets": [
+                        presets: [
                             "@babel/preset-env",
-                            ["@babel/preset-react", {"runtime": "automatic"}]
-                        ]
+                            ["@babel/preset-react", { "runtime": "automatic" }],
+                            "@babel/preset-typescript"
+                        ],
                     },
                 },
             },
         ],
     },
     resolve: {
-        extensions: ['.js', '.jsx'], // Webpack bude automaticky hledat .js a .jsx soubory
+        extensions: ['.ts', '.tsx', '.js', '.jsx'], // Webpack bude automaticky hledat .js a .jsx soubory
     },
 };

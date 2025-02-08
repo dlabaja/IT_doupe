@@ -5,20 +5,21 @@ import {ButtonClick, ButtonLink} from "../../components/button/button";
 import {List} from "../../components/list/list";
 import {Title} from "../../components/title/title";
 import {Text} from "../../components/text/text";
+import {useRef} from "react";
 
 export const Homepage = () => {
-    let changeTitle = () => {};
+    const changeTitleRef = useRef(() => {});
     
     return <>
         <div id={"top"}>
-            <ChangingTitle changeTitle={(fn) => changeTitle = fn}/>
+            <ChangingTitle changeTitle={(fn) => (changeTitleRef.current = fn)} />
             <Title level={2}>Umí to i menší nadpis</Title>
             <Title level={4}>a ještě menší</Title>
         </div>
         <Divider/>
         <Article text={"Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repellendus, non temporibus omnis eius necessitatibus at? Deleniti aperiam, nostrum rem illo laborum culpa natus nemo magni tenetur voluptatem consequatur soluta a? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate quae voluptate neque impedit eveniet ratione voluptatum adipisci doloribus tempora, vitae dolorem mollitia architecto aut optio. Nostrum minus recusandae itaque dignissimos?"}/>
-        <ButtonClick 
-            onClick={() => changeTitle()} 
+        <ButtonClick
+            onClick={() => changeTitleRef.current()}
             text={"Změň nadpis"} 
             isBlue={true}
         />
