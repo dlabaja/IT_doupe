@@ -7,7 +7,7 @@ import * as styles from "./app.module.scss";
 export const App = () => {
     console.log(styles)
     
-    return <div className={styles.body}>
+    return <div className={styles.layout}>
         <BrowserRouter>
             <Routes>
                 <Route path="/" element={<Homepage />} />

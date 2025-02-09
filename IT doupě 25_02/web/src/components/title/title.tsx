@@ -11,7 +11,7 @@ export const Title = (props: ITitleProps) => {
     const {children, level} = props;
     const HeadingTag = `h${level}` as keyof JSX.IntrinsicElements;
     return (
-        <div className={cn(styles.layout, level === 1 && styles.h1)}>
+        <div className={cn(styles.layout)}>
             <HeadingTag>{children}</HeadingTag>
         </div>
     );

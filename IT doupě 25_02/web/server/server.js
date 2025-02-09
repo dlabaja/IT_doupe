@@ -15,7 +15,11 @@ app.get('*', (req, res) => {
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Epický web</title>
       </head>
-      <body>
+      <body style=
+          "font-family: Biennale, serif;
+          background: aliceblue;
+          color: navy;"
+        >
         <div id="root"></div>
         <script src="/bundle.js"></script>
       </body>

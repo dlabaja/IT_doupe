@@ -1,5 +1,6 @@
 import {getRandomNumber} from "../../scripts/utils";
 import {useRef, useState} from "react";
+import {Title} from "../title/title";
 
 interface IChangingTitleProps {
     changeTitle: (fn: () => void) => void
@@ -51,11 +52,10 @@ export const ChangingTitle = (props: IChangingTitleProps) => {
     })
     
     return (
-        <h1 
-            id={"title"} 
-            onMouseOver={() => scrambleText()}
-        >
-            {text}
-        </h1>
+        <div onMouseOver={() => scrambleText()}>
+            <Title level={1}>
+                {text}
+            </Title>
+        </div>
     )
 }

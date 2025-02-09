@@ -33,7 +33,7 @@ export const Homepage = () => {
             </div>
             <div className={"imageContainer"}>
                 <img src={"https://www.spseol.cz/images/logo_spseol_web.png"} alt={"logo"}/>
-                <div id={"imageInfo"}>
+                <div className={"imageInfo"}>
                     <Text>Logo školy</Text>
                 </div>
             </div>

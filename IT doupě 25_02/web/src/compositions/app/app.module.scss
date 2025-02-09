@@ -1,8 +1,7 @@
-.body {
-  font-family: Biennale, serif;
-  background: aliceblue;
-  color: navy;
+@import "../../styles/variables";
+
+.layout {
   max-width: 1000px;
   margin: auto;
-  padding: 20px;
+  padding: $itemOffset * 2.5;
 }
