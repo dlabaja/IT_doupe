@@ -11,10 +11,10 @@
 }
 
 .buttonBlue {
-  background: $blueDark;
+  background: $default;
   color: $blueLight;
   
   &:hover {
-    background: $blueDarker;
+    background: $blueDark;
   }
 }

@@ -5,8 +5,6 @@ import {NotFoundPage} from "../../pages/not-found-page/not-found-page";
 import * as styles from "./app.module.scss";
 
 export const App = () => {
-    console.log(styles)
-    
     return <div className={styles.layout}>
         <BrowserRouter>
             <Routes>
