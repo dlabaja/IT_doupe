@@ -1,4 +1,6 @@
 import {JSX, ReactNode} from "react";
+import * as styles from "./title.module.scss"
+import {cn} from "../../scripts/utils";
 
 interface ITitleProps {
     children: ReactNode,
@@ -8,5 +10,9 @@ interface ITitleProps {
 export const Title = (props: ITitleProps) => {
     const {children, level} = props;
     const HeadingTag = `h${level}` as keyof JSX.IntrinsicElements;
-    return <HeadingTag>{children}</HeadingTag>;
+    return (
+        <div className={cn(styles.layout, level === 1 && styles.h1)}>
+            <HeadingTag>{children}</HeadingTag>
+        </div>
+    );
 }

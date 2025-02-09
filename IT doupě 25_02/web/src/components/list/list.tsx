@@ -10,7 +10,7 @@ export const List = <T,>(props: IListProps<T>) => {
         return (
             <>
                 {items.map((item, key) => {
-                    return <li key={key}>{item.toString()}</li>
+                    return <li key={key}>{`${item}`}</li>
                 })}
             </>
         );

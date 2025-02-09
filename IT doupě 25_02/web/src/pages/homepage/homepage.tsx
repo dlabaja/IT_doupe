@@ -6,12 +6,13 @@ import {List} from "../../components/list/list";
 import {Title} from "../../components/title/title";
 import {Text} from "../../components/text/text";
 import {useRef} from "react";
+import * as styles from "./homepage.module.scss"
 
 export const Homepage = () => {
     const changeTitleRef = useRef(() => {});
     
     return <>
-        <div id={"top"}>
+        <div className={styles.top}>
             <ChangingTitle changeTitle={(fn) => (changeTitleRef.current = fn)} />
             <Title level={2}>Umí to i menší nadpis</Title>
             <Title level={4}>a ještě menší</Title>

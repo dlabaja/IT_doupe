@@ -1,7 +1,9 @@
 const path = require("path");
+const ForkTsCheckerWebpackPlugin = require('fork-ts-checker-webpack-plugin');
+const ESLintPlugin = require('eslint-webpack-plugin');
 
 module.exports = {
-    entry: "./src/scripts/index.jsx",
+    entry: "./src/scripts/index.tsx",
     output: {
         path: path.resolve(__dirname, "dist"),
         filename: "bundle.js",
@@ -11,35 +13,35 @@ module.exports = {
         rules: [
             {
                 test: /\.module\.scss$/i, // modules
-                use: ["style-loader", {
-                    loader: "css-loader",
-                    options: {
-                        modules: true,
+                use: [
+                    "style-loader",
+                    {
+                        loader: "css-loader",
+                        options: {
+                            modules: true,
+                        },
                     },
-                }, "sass-loader"],
+                    "sass-loader",
+                ],
             },
             {
-                test: /\.scss$/i, // non-modules
-                exclude: /\.module\.scss$/i,
-                use: ["style-loader", "css-loader", "sass-loader"], // Sass/Scss -> CSS -> inline CSS
-            },
-            {
-                test: /\.[jt]sx?$/,
+                test: /\.tsx?$/,
+                use: 'ts-loader',
                 exclude: /node_modules/,
-                use: {
-                    loader: "babel-loader",
-                    options: {
-                        presets: [
-                            "@babel/preset-env",
-                            ["@babel/preset-react", { "runtime": "automatic" }],
-                            "@babel/preset-typescript"
-                        ],
-                    },
-                },
             },
         ],
     },
     resolve: {
-        extensions: ['.ts', '.tsx', '.js', '.jsx'], // Webpack bude automaticky hledat .js a .jsx soubory
+        extensions: ['.ts', '.tsx', '.js', '.jsx'],
     },
+    plugins: [
+        new ESLintPlugin({
+            extensions: ['ts', 'tsx'], // Ensure ESLint checks TypeScript files too
+            overrideConfigFile: path.resolve(__dirname, 'eslint.config.mjs'),
+            configType: "flat"
+        }),
+        new ForkTsCheckerWebpackPlugin({
+            async: false, // Makes the process synchronous so it runs before build
+        }),
+    ],
 };

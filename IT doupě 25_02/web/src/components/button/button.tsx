@@ -1,4 +1,5 @@
 import {cn} from "../../scripts/utils";
+import * as styles from "./button.module.scss"
 
 interface IButtonProps {
     text: string,
@@ -18,7 +19,7 @@ const Button = (props: IButtonProps) => {
     const {isBlue, text, onClick} = props;
     return (
         <button 
-            className={cn("button", isBlue && "buttonBlue")} 
+            className={cn(styles.button, isBlue && styles.buttonBlue)} 
             onClick={onClick}
         >
             {text}
