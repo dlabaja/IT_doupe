@@ -1,0 +1,20 @@
+@import "../../styles/colors.scss";
+@import "../../styles/variables";
+
+.button {
+  padding: $itemOffset;
+  width: 300px;
+  border-radius: $itemOffset;
+  border: 1px solid black;
+  cursor: pointer;
+  @include textDefault()
+}
+
+.buttonBlue {
+  background: $default;
+  color: $blueLight;
+  
+  &:hover {
+    background: $blueDark;
+  }
+}

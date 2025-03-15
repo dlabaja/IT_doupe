@@ -1,0 +1,47 @@
+{
+  "name": "it_doupe",
+  "version": "1.0.0",
+  "description": "projekt do elektronky",
+  "scripts": {
+    "run": "babel-node server/server.js",
+    "build": "webpack",
+    "watch": "webpack --watch --progress",
+    "install-deps": "npm install",
+    "generate-dts": "npx typed-scss-modules src",
+    "watch-dts": "npx typed-scss-modules src --watch"
+  },
+  "author": "dlabaja",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/core": "^7.26.0",
+    "@babel/node": "^7.26.0",
+    "@babel/preset-env": "^7.26.0",
+    "@babel/preset-react": "^7.26.3",
+    "@babel/preset-typescript": "^7.26.0",
+    "@eslint/js": "^9.20.0",
+    "@types/react": "^19.0.8",
+    "@types/react-dom": "^19.0.3",
+    "babel-loader": "^9.2.1",
+    "css-loader": "^7.1.2",
+    "eslint": "^9.20.0",
+    "eslint-plugin-react": "^7.37.4",
+    "eslint-webpack-plugin": "^4.2.0",
+    "express": "^4.21.2",
+    "fork-ts-checker-webpack-plugin": "^9.0.2",
+    "globals": "^15.14.0",
+    "sass": "^1.75.0",
+    "sass-loader": "^14.1.1",
+    "scheduler": "^0.25.0",
+    "style-loader": "^4.0.0",
+    "ts-loader": "^9.5.2",
+    "typed-scss-modules": "^8.1.1",
+    "typescript": "^5.7.3",
+    "typescript-eslint": "^8.23.0",
+    "webpack": "^5.97.1"
+  },
+  "dependencies": {
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0",
+    "react-router-dom": "^7.1.1"
+  }
+}

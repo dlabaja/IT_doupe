@@ -1,0 +1,11 @@
+@import "../../styles/variables";
+@import "../../styles/colors";
+
+.layout {
+  max-width: 1000px;
+  margin: auto;
+  padding: $itemOffset * 2.5;
+  font-family: Biennale, serif;
+  color: $default;
+  @include textDefault();
+}

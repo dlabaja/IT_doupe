@@ -1,0 +1,18 @@
+$itemOffset: 8px;
+
+$weightSemibold: 600;
+$weightRegular: 400;
+
+$fontBase: 16px;
+$fontSmall: 14px;
+$fontTitle: 20px;
+
+@mixin textDefault() {
+  font-weight: $weightRegular;
+  font-size: $fontBase;
+}
+
+@mixin textTitle() {
+  font-weight: $weightSemibold;
+  font-size: $fontTitle;
+}
