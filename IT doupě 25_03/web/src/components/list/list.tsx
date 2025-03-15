@@ -1,4 +1,4 @@
-interface IListProps<T> {
+export interface IListProps<T> {
     isOrdered: boolean,
     items: T[]
 }

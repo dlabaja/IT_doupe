@@ -2,7 +2,7 @@ import {JSX, ReactNode} from "react";
 import * as styles from "./title.module.scss"
 import {cn} from "../../scripts/utils";
 
-interface ITitleProps {
+export interface ITitleProps {
     children: ReactNode,
     level: 1 | 2 | 3 | 4 | 5 | 6
 }

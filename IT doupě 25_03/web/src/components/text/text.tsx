@@ -1,6 +1,6 @@
 import {ReactNode} from "react";
 
-interface ITextProps {
+export interface ITextProps {
     children: ReactNode
 }
 

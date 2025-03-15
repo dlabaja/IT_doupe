@@ -1,5 +1,8 @@
 import {NotFound} from "../../components/not-found/not-found";
+import {Layout} from "../../components/layout/layout";
 
 export const NotFoundPage = () => {
-    return <NotFound/>
+    return <Layout>
+        <NotFound/>
+    </Layout>
 }

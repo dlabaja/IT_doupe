@@ -7,11 +7,9 @@ interface IButtonProps {
     onClick?: () => void
 }
 
-interface IButtonClickProps extends IButtonProps {
-    onClick: () => void
-}
+export interface IButtonClickProps extends IButtonProps {}
 
-interface IButtonLinkProps extends IButtonProps {
+export interface IButtonLinkProps extends IButtonProps {
     link: string
 }
 

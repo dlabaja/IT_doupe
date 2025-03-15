@@ -2,7 +2,7 @@
 @import "../../styles/colors";
 
 .layout {
-  font-family: Biennale, serif;
-  color: $default;
-  @include textDefault();
+  max-width: 1000px;
+  margin: auto;
+  padding: $itemOffset * 2.5;
 }

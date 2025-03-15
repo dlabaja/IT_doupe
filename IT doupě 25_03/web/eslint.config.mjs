@@ -13,11 +13,13 @@ export default [
   pluginReact.configs.flat.recommended,
   {
     rules: {
-      "react/react-in-jsx-scope": "off",
-      "@typescript-eslint/no-unused-vars": "warn",
       "indent": ["error", 4],
+      "react/react-in-jsx-scope": "off",
       "react/jsx-indent": ["error", 4], // Odsazení pro JSX
-      "react/jsx-indent-props": ["error", 4] // Odsazení atributů JSX
+      "react/jsx-indent-props": ["error", 4], // Odsazení atributů JSX
+      "@typescript-eslint/ban-ts-comment": "off", // abych mohl používat ts-ignore
+      "@typescript-eslint/no-empty-object-type": "off",
+      "@typescript-eslint/no-unused-vars": "warn",
     }
   }
 ];

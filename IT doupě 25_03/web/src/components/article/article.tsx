@@ -1,6 +1,6 @@
 import * as styles from "./article.module.scss";
 
-interface IArticleProps {
+export interface IArticleProps {
     text: string;
 }
 

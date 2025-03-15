@@ -1,0 +1,7 @@
+import {Meta, StoryObj} from "@storybook/react";
+
+export default {
+    component: **,
+} as Meta<I**Props>
+
+export const Default: StoryObj<I**Props> = {}
